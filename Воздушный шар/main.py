@@ -115,6 +115,8 @@ class Thorns(pygame.sprite.Sprite):
 				thorns_list = []
 				player.rect.centerx = WIDTH/2
 				player.rect.centery = HEIGHT/1.2
+				power.rect.center = randrange(11, WIDTH-11, 11), randrange(-11, -HEIGHT, -11)
+				magnet.rect.center = randrange(9, WIDTH-9, 9), randrange(-12, -HEIGHT, -12)
 				air_and_thorns_create(air_list, thorns_list)
 
 	def update(self):
